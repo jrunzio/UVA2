@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh;
 }
 html,
 body {
@@ -94,7 +94,6 @@ body::after {
     background-position: -500px 500px;
   }
 }
-/* Navegación fija y clara */
 nav {
   background-color: #161b22;
   padding: 10px;
@@ -119,7 +118,6 @@ h2 {
   text-align: center;
 }
 
-/* Contenido principal general */
 main {
   max-width: 800px;
   margin: 30px auto;
@@ -129,13 +127,11 @@ main {
   box-shadow: 0 0 20px rgba(121, 192, 255, 0.2);
 }
 
-/* Listas */
 ul {
   list-style-type: square;
   padding-left: 20px;
 }
 
-/* Enlaces */
 a {
   color: #58a6ff;
 }
@@ -392,7 +388,7 @@ footer {
   }
 }
 
-/* Para pantallas muy pequeñas */
+/* Para pantallas mas pequeñas */
 @media (max-width: 400px) {
   nav a {
     margin: 0 5px;
