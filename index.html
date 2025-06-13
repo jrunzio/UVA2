@@ -1,3 +1,11 @@
+<!--
+En el sitio personal del portfolio de estudiantes incluir en el header, dos
+botones, modo claro y modo oscuro. Utiliza JQuery (react. u otro framework) o
+con javascript para cambiar el estilo de la página web de acuerdo a si se
+presiona un botón o el otro, alternando entre un modo claro (cualquier color) y
+el modo oscuro (dark).
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,6 +28,9 @@
         <a href="./materias-2025.html">Materias 2025</a> |
         <a href="./contacto.html">Contacto</a>
       </nav>
+      <div style="margin-top: 10px">
+        <button id="toggle-modo" class="toggle-modo">🌙 Modo Oscuro</button>
+      </div>
     </header>
 
     <main>
@@ -66,5 +77,6 @@
     <footer>
       <p>&copy;Curso: 518378 - Profesora: Patricia Litovicius</p>
     </footer>
+    <script src="modo.js"></script>
   </body>
 </html>

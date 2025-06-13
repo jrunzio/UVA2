@@ -1,88 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diseño y Desarrollo Web</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="avisos.html">Avisos</a> |
-            <a href="sobre-mi.html">Sobre mí</a> |
-            <a href="materias-2025.html">Materias 2025</a> |
-            <a href="contacto.html">Contacto</a>
-        </nav>
+      <nav>
+        <a href="index.html">Home</a> | <a href="avisos.html">Avisos</a> |
+        <a href="sobre-mi.html">Sobre mí</a> |
+        <a href="materias-2025.html">Materias 2025</a> |
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div style="margin-top: 10px">
+        <button id="toggle-modo" class="toggle-modo">🌙 Modo Oscuro</button>
+      </div>
     </header>
 
     <main class="main-desarrollo">
-        <h1>Diseño y Desarrollo Web</h1>
+      <h1>Diseño y Desarrollo Web</h1>
 
-        <section class="grid-container">
-
-            <div class="left-column">
-                <div class="grid-item">
-                        <h2>Fechas de examenes</h2>
-                        <ul>
-                            <li>Parcial 1: 27/04/2025</li>
-                            <li>Parcial 2: 13/06/2025</li>
-                            <li>Recuperatorio: 04/07/2025</li>
-                            <li>Examen Final: 18/07/2025</li>
-                        </ul>
-                        <h3>Otras fechas importantes</h3>
-                        <ul>
-                            <li>Entrega TP obligatorio 1: 25/04/2025</li>
-                            <li>Entrega TP obligatorio 2: 27/04/2025</li>
-                        </ul>
-                    </div>
-                <div class="grid-item">
-                <h2>Bibliografía</h2>
-                <ul>
-                    <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557789/View">Exposición de Experto: Internet y WWW</a></li>
-                    <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557794/View">Exposición de Experto: HTML - Introducción</a></li>
-                    <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557808/View">Exposición de Experto: Introducción a CSS</a></li>
-                    <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557798/View">Arquitectura</a></li>
-                </ul>
-                </div>
-            </div>
+      <section class="grid-container">
+        <div class="left-column">
+          <div class="grid-item">
+            <h2>Fechas de examenes</h2>
+            <ul>
+              <li>Parcial 1: 27/04/2025</li>
+              <li>Parcial 2: 13/06/2025</li>
+              <li>Recuperatorio: 04/07/2025</li>
+              <li>Examen Final: 18/07/2025</li>
+            </ul>
+            <h3>Otras fechas importantes</h3>
+            <ul>
+              <li>Entrega TP obligatorio 1: 25/04/2025</li>
+              <li>Entrega TP obligatorio 2: 27/04/2025</li>
+            </ul>
+          </div>
+          <div class="grid-item">
+            <h2>Bibliografía</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557789/View"
+                  >Exposición de Experto: Internet y WWW</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557794/View"
+                  >Exposición de Experto: HTML - Introducción</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557808/View"
+                  >Exposición de Experto: Introducción a CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557798/View"
+                  >Arquitectura</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <div class="right-column grid-item">
-            <h2>Actividades UVAs</h2>
-                <ul>
-                    <li><a href="https://jrunzio.github.io/ej1HtmlIntro/" target="_blank">Ejercicio individual: HTML - Introducción 📝✅</a></li>
-                    <li><a href="https://github.com/jrunzio/ej1HtmlIntro" target="_blank">Repositorio: HTML - Introducción 📝✅</a></li>
+          <h2>Actividades UVAs</h2>
+          <ul>
+            <li>
+              <a href="https://jrunzio.github.io/ej1HtmlIntro/" target="_blank"
+                >Ejercicio individual: HTML - Introducción 📝✅</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/jrunzio/ej1HtmlIntro" target="_blank"
+                >Repositorio: HTML - Introducción 📝✅</a
+              >
+            </li>
 
-                    <li><a href="https://jrunzio.github.io/ej2Etiquetas/" target="_blank">Ejercicio individual: HTML - Etiquetas 📝✅</a></li>
-                    <li><a href="https://github.com/jrunzio/ej2Etiquetas" target="_blank">Repositorio: HTML - Etiquetas 📝✅</a></li>
+            <li>
+              <a href="https://jrunzio.github.io/ej2Etiquetas/" target="_blank"
+                >Ejercicio individual: HTML - Etiquetas 📝✅</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/jrunzio/ej2Etiquetas" target="_blank"
+                >Repositorio: HTML - Etiquetas 📝✅</a
+              >
+            </li>
 
-                    <li><a href="https://jrunzio.github.io/ej3Integrador/" target="_blank">Ejercicio individual: Ejercicio integrador 📝(obligatorio)✅</a></li>
-                    <li><a href="https://github.com/jrunzio/ej3Integrador" target="_blank">Repositorio: Ejercicio integrador 📝(obligatorio)✅</a></li>
+            <li>
+              <a href="https://jrunzio.github.io/ej3Integrador/" target="_blank"
+                >Ejercicio individual: Ejercicio integrador 📝(obligatorio)✅</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/jrunzio/ej3Integrador" target="_blank"
+                >Repositorio: Ejercicio integrador 📝(obligatorio)✅</a
+              >
+            </li>
 
-                    <li><a href="https://jrunzio.github.io/ej4FormatodeTexto/" target="_blank">Ejercicio individual: Formato de texto 📝✅</a></li>
-                    <li><a href="https://github.com/jrunzio/ej4FormatodeTexto" target="_blank">Repositorio: Formato de texto 📝✅</a></li>
+            <li>
+              <a
+                href="https://jrunzio.github.io/ej4FormatodeTexto/"
+                target="_blank"
+                >Ejercicio individual: Formato de texto 📝✅</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/jrunzio/ej4FormatodeTexto"
+                target="_blank"
+                >Repositorio: Formato de texto 📝✅</a
+              >
+            </li>
 
-                    <li><a href="https://jrunzio.github.io/ej5FormatodeCajas/" target="_blank">Ejercicio individual: Formato de cajas 📝✅</a></li>
-                    <li><a href="https://github.com/jrunzio/ej5FormatodeCajas" target="_blank">Repositorio: Formato de cajas 📝✅</a></li>
+            <li>
+              <a
+                href="https://jrunzio.github.io/ej5FormatodeCajas/"
+                target="_blank"
+                >Ejercicio individual: Formato de cajas 📝✅</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/jrunzio/ej5FormatodeCajas"
+                target="_blank"
+                >Repositorio: Formato de cajas 📝✅</a
+              >
+            </li>
 
-                    <li><a href="https://jrunzio.github.io/ej6UnidadesdeMedida/" target="_blank">Ejercicio individual: Unidades de medida 📝✅</a></li>
-                    <li><a href="https://github.com/jrunzio/ej6UnidadesdeMedida" target="_blank">Repositorio: Unidades de medida 📝✅</a></li>
+            <li>
+              <a
+                href="https://jrunzio.github.io/ej6UnidadesdeMedida/"
+                target="_blank"
+                >Ejercicio individual: Unidades de medida 📝✅</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/jrunzio/ej6UnidadesdeMedida"
+                target="_blank"
+                >Repositorio: Unidades de medida 📝✅</a
+              >
+            </li>
 
-                    <li><a href="https://jrunzio.github.io/ej7GridyFlex/" target="_blank">Ejercicio individual: Grid y Flexbox 📝✅</a></li>
-                    <li><a href="https://github.com/jrunzio/ej7GridyFlex" target="_blank">Repositorio: Grid y Flexbox 📝✅</a></li>
+            <li>
+              <a href="https://jrunzio.github.io/ej7GridyFlex/" target="_blank"
+                >Ejercicio individual: Grid y Flexbox 📝✅</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/jrunzio/ej7GridyFlex" target="_blank"
+                >Repositorio: Grid y Flexbox 📝✅</a
+              >
+            </li>
 
-                    <li><a href="https://jrunzio.github.io/UVA2/" target="_blank">UVA 2 (entrega obligatoria en el parcial)</a></li>
-                    <li><a href="https://github.com/jrunzio/UVA2" target="_blank">Repositorio: UVA 2 (entrega obligatoria en el parcial)</a></li>
-                    <li><a href="https://jrunzio.github.io/UVA2/" target="_blank">Primer parcial</a></li>
-                </ul>
-            </div>
-        </section>
+            <li>
+              <a href="https://jrunzio.github.io/UVA2/" target="_blank"
+                >UVA 2 (entrega obligatoria en el parcial)</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/jrunzio/UVA2" target="_blank"
+                >Repositorio: UVA 2 (entrega obligatoria en el parcial)</a
+              >
+            </li>
+            <li>
+              <a href="https://jrunzio.github.io/UVA2/" target="_blank"
+                >Primer parcial</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy;Curso: 518378 - Profesora: Patricia Litovicius</p>
+      <p>&copy;Curso: 518378 - Profesora: Patricia Litovicius</p>
     </footer>
-
-</body>
+    <script src="modo.js"></script>
+  </body>
 </html>

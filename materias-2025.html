@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Materias 2025</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="avisos.html">Avisos</a> |
-            <a href="sobre-mi.html">Sobre mí</a> |
-            <a href="contacto.html">Contacto</a>
-        </nav>
+      <nav>
+        <a href="index.html">Home</a> | <a href="avisos.html">Avisos</a> |
+        <a href="sobre-mi.html">Sobre mí</a> |
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div style="margin-top: 10px">
+        <button id="toggle-modo" class="toggle-modo">🌙 Modo Oscuro</button>
+      </div>
     </header>
 
     <main class="main-materias">
-        <h1>Materias 2025</h1>
+      <h1>Materias 2025</h1>
 
-        <ul>
-            <li><a href="https://virtualbsp.uade.edu.ar/d2l/home/43184" target="_blank">Arquitectura del Computador</a></li>
-            <li><a href="https://virtualbsp.uade.edu.ar/d2l/home/43524" target="_blank">Sistemas de la Información I</a></li>
-            <li><a href="https://virtualbsp.uade.edu.ar/d2l/home/43589" target="_blank">POO</a></li>
-            <li><a href="https://virtualbsp.uade.edu.ar/d2l/home/43605" target="_blank">Marketing</a></li>
-            <li><a href="./desarrollo-web.html">Diseño y Desarrollo Web</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a
+            href="https://virtualbsp.uade.edu.ar/d2l/home/43184"
+            target="_blank"
+            >Arquitectura del Computador</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://virtualbsp.uade.edu.ar/d2l/home/43524"
+            target="_blank"
+            >Sistemas de la Información I</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://virtualbsp.uade.edu.ar/d2l/home/43589"
+            target="_blank"
+            >POO</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://virtualbsp.uade.edu.ar/d2l/home/43605"
+            target="_blank"
+            >Marketing</a
+          >
+        </li>
+        <li><a href="./desarrollo-web.html">Diseño y Desarrollo Web</a></li>
+      </ul>
     </main>
     <footer>
-        <p>&copy;Curso: 518378 - Profesora: Patricia Litovicius</p>
+      <p>&copy;Curso: 518378 - Profesora: Patricia Litovicius</p>
     </footer>
-
-</body>
+    <script src="modo.js"></script>
+  </body>
 </html>

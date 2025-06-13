@@ -14,6 +14,9 @@
         <a href="sobre-mi.html">Sobre mí</a> |
         <a href="materias-2025.html">Materias 2025</a>
       </nav>
+      <div style="margin-top: 10px">
+        <button id="toggle-modo" class="toggle-modo">🌙 Modo Oscuro</button>
+      </div>
     </header>
 
     <main class="main-contacto">
@@ -54,6 +57,7 @@
       <p>&copy;Curso: 518378 - Profesora: Patricia Litovicius</p>
     </footer>
     <script>
+      // Validación de formulario
       document
         .getElementById("form-contacto")
         .addEventListener("submit", function (e) {
@@ -83,6 +87,8 @@
             document.getElementById("form-contacto").reset();
           }
         });
+    </script>
+    <script src="modo.js"></script>
     </script>
   </body>
 </html>

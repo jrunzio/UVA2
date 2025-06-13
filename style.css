@@ -1,3 +1,32 @@
+/* --- Botón toggle modo claro/oscuro --- */
+.toggle-modo {
+  background: linear-gradient(90deg, #161b22 60%, #79c0ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(121, 192, 255, 0.1);
+  transition: background 0.3s, color 0.3s, transform 0.1s;
+  margin-left: 0.5rem;
+}
+.toggle-modo:hover {
+  background: linear-gradient(90deg, #79c0ff 60%, #161b22 100%);
+  color: #161b22;
+  transform: scale(1.05);
+}
+
+body.claro .toggle-modo {
+  background: linear-gradient(90deg, #e3e8f0 60%, #1f6feb 100%);
+  color: #222;
+  box-shadow: 0 2px 8px rgba(31, 111, 235, 0.1);
+}
+body.claro .toggle-modo:hover {
+  background: linear-gradient(90deg, #1f6feb 60%, #e3e8f0 100%);
+  color: #fff;
+}
 /* Fondo estrellado con animación */
 body {
   background-color: #0a0d14;
@@ -365,7 +394,6 @@ footer {
   padding: 1rem;
 }
 
-/* --- Responsive para todas las páginas --- */
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -405,7 +433,6 @@ footer {
   }
 }
 
-/* Para pantallas mas pequeñas */
 @media (max-width: 400px) {
   nav a {
     margin: 0 5px;
@@ -415,4 +442,44 @@ footer {
   .grid-item {
     padding: 10px;
   }
+}
+
+body.claro {
+  background-color: #f4f6fa;
+  color: #222;
+}
+body.claro main,
+body.claro .main-sobre-mi,
+body.claro .main-materias,
+body.claro .main-contacto,
+body.claro .main-avisos,
+body.claro .grid-item {
+  background-color: #fff;
+  color: #222;
+  box-shadow: 0 0 20px rgba(121, 192, 255, 0.08);
+}
+body.claro nav,
+body.claro footer {
+  background-color: #e3e8f0;
+  color: #222;
+}
+body.claro a {
+  color: #1f6feb;
+}
+body.claro a:hover {
+  color: #0056b3;
+}
+body.claro .materias-table {
+  background-color: #f8fafd;
+  box-shadow: 0 0 15px rgba(31, 111, 235, 0.08);
+}
+body.claro .materias-table th {
+  background-color: #e3e8f0;
+  color: #1f6feb;
+}
+body.claro .materias-table tr:hover {
+  background-color: #eaf2fb;
+}
+body.claro .materias-table td {
+  color: #222;
 }
