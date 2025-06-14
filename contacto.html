@@ -21,7 +21,7 @@
 
     <main class="main-contacto">
       <h1>Formulario de Contacto</h1>
-      <form class="form-contacto" id="form-contacto">
+      <form class="form-contacto" id="form-contacto" novalidate>
         <label for="nombre">Nombre:</label>
         <input
           type="text"
@@ -57,37 +57,39 @@
       <p>&copy;Curso: 518378 - Profesora: Patricia Litovicius</p>
     </footer>
     <script>
-      // Validación de formulario
-      document
-        .getElementById("form-contacto")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const nombre = document.getElementById("nombre").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const mensaje = document.getElementById("mensaje").value.trim();
-          const mensajeDiv = document.getElementById("mensaje-formulario");
-          let errores = [];
+      document.addEventListener("DOMContentLoaded", function () {
+        // Validación del form
+        document
+          .getElementById("form-contacto")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+            const nombre = document.getElementById("nombre").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mensaje = document.getElementById("mensaje").value.trim();
+            const mensajeDiv = document.getElementById("mensaje-formulario");
+            let errores = [];
 
-          // Validaciones
-          if (!nombre) errores.push("El nombre es obligatorio.");
-          if (!email) {
-            errores.push("El correo electrónico es obligatorio.");
-          } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            errores.push("El correo electrónico no es válido.");
-          }
-          if (!mensaje) errores.push("El mensaje es obligatorio.");
+            // Las validaciones
+            if (!nombre) errores.push("El nombre es obligatorio.");
+            if (!email) {
+              errores.push("El correo electrónico es obligatorio.");
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+              errores.push("El correo electrónico no es válido.");
+            }
+            if (!mensaje) errores.push("El mensaje es obligatorio.");
 
-          if (errores.length > 0) {
-            mensajeDiv.style.color = "#ff4d4f";
-            mensajeDiv.innerHTML = errores.join("<br>");
-          } else {
-            mensajeDiv.style.color = "#58a6ff";
-            mensajeDiv.innerHTML = `Gracias por su contacto, <strong>${nombre}</strong>.<br>En breve le estaré respondiendo.`;
-            // Opcional: limpiar el formulario
-            document.getElementById("form-contacto").reset();
-          }
-        });
+            if (errores.length > 0) {
+              mensajeDiv.style.color = "#ff4d4f";
+              mensajeDiv.innerHTML = errores.join("<br>");
+            } else {
+              mensajeDiv.style.color = "#58a6ff";
+              mensajeDiv.innerHTML = `Gracias por su contacto, <strong>${nombre}</strong>.<br>En breve le estaré respondiendo.`;
+              // Limpio el form
+              document.getElementById("form-contacto").reset();
+            }
+          });
+      });
     </script>
-    <script src="modo.js" defer></script>
+    <script src="modo.js"></script>
   </body>
 </html>
