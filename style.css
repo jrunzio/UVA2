@@ -62,7 +62,7 @@ main {
   box-sizing: border-box;
 }
 /* Para volver a habilitar el efecto de estrellas descomentar aca*/
-/* Efecto de estrellas 
+/* Efecto de estrellas */
 body::before {
   content: "";
   position: fixed;
@@ -87,7 +87,7 @@ body::before {
   background-size: 500px 500px;
   animation: stars-animation 100s linear infinite;
   z-index: -1;
-}*/
+}
 
 /* Efecto de nebulosa */
 body::after {
