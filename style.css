@@ -229,7 +229,11 @@ a:hover {
 
 .main-avisos li {
   margin-bottom: 8px;
-  color: #c9d1d9;
+  color: #c9d1d9; /* color claro para modo oscuro */
+}
+
+body.claro .main-avisos li {
+  color: #222; /* color oscuro para modo claro */
 }
 
 /* --- Página Sobre mí --- */
@@ -253,10 +257,14 @@ a:hover {
 }
 
 .bio p {
-  color: #c9d1d9;
+  color: #c9d1d9; /* color claro para modo oscuro */
   margin: 10px 0;
   line-height: 1.6;
   text-align: left;
+}
+
+body.claro .bio p {
+  color: #222; /* color oscuro para modo claro */
 }
 
 /* --- Página Materias 2025 --- */
@@ -482,4 +490,34 @@ body.claro .materias-table tr:hover {
 }
 body.claro .materias-table td {
   color: #222;
+}
+
+body.claro .form-contacto input[type="text"],
+body.claro .form-contacto input[type="email"],
+body.claro .form-contacto textarea {
+  background-color: #f4f6fa;
+  color: #222;
+  border: 1px solid #b3c0d1;
+}
+
+body.claro .input-contacto {
+  background-color: #f4f6fa;
+  color: #222;
+  border: 1px solid #b3c0d1;
+}
+
+body.claro::before {
+  background-image: radial-gradient(
+      1px 1px at 50px 160px,
+      #55585c,
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(1px 1px at 90px 40px, #55585c, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 130px 80px, #55585c, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 160px 120px, #55585c, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 150px 150px, #55585c, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 210px 280px, #7a7d81, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 300px 300px, #55585c, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 250px 250px, #7a7d81, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 40px 310px, #55585c, rgba(0, 0, 0, 0));
 }
